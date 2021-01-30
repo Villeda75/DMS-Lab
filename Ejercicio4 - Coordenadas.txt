@@ -1,0 +1,80 @@
+import java.util.Scanner;
+
+class Main {
+
+  /*
+   * 4. Escribir un programa que pida ingresar coordenadas (x,y) que representan
+   * puntos en el plano. Informar cuántos puntos se han ingresado en el primer,
+   * segundo, tercer y cuarto cuadrante. Al comenzar el programa se pide que se
+   * ingrese la cantidad de puntos a procesar.
+   */
+
+  private Scanner teclado = new Scanner(System.in);
+  private Double[] abscisas;
+  private Double[] ordenadas;
+
+  public void cargarXY(int n) {
+
+    abscisas = new Double[n];
+    ordenadas = new Double[n];
+
+    for (int f = 0; f < n; f++) {
+      System.out.print("\nIngrese abscisa X" + (f + 1) + ":  ");
+      abscisas[f] = teclado.nextDouble();
+
+      System.out.print("Ingrese ordenada Y" + (f + 1) + ":  ");
+      ordenadas[f] = teclado.nextDouble();
+    }
+  }
+
+  public void resultadosCuadrantes(int n) {
+
+    System.out.println("\n\n*****************************************************************");
+    System.out.println("\t\t\t\t\t\t\tResultados");
+    System.out.println("*****************************************************************\n");
+
+    for (int f = 0; f < n; f++) {
+
+      // Primer cuadrante (+,+)
+      if (abscisas[f] > 0 && ordenadas[f] > 0) {
+        System.out.println("( " + abscisas[f] + " , " + ordenadas[f] + " )  Primer cuadrante");
+      }
+
+      // Segundo cuadrante (-,+)
+      if (abscisas[f] < 0 && ordenadas[f] > 0) {
+        System.out.println("( " + abscisas[f] + " , " + ordenadas[f] + " )  Segundo cuadrante");
+      }
+
+      // Tercer cuadrante (-,-)
+      if (abscisas[f] < 0 && ordenadas[f] < 0) {
+        System.out.println("( " + abscisas[f] + " , " + ordenadas[f] + " )  Tercer cuadrante");
+      }
+
+      // Cuarto cuadrante (+,-)
+      if (abscisas[f] > 0 && ordenadas[f] < 0) {
+        System.out.println("( " + abscisas[f] + " , " + ordenadas[f] + " )  Cuarto cuadrante");
+      }
+    }
+
+    System.out.println("\n*****************************************************************");
+
+  }
+
+  public static void main(String[] args) {
+
+    
+    System.out.println("\n*****************************************************************");
+    System.out.println("Programa que informa a qué cuadrante pertenece una coordena ingresada");
+    System.out.println("*****************************************************************");
+
+    int cantCoordenadas = 0;
+    Scanner keyword = new Scanner(System.in);
+
+    System.out.print("\nCantidad de coordenas (x,y) a ingresar: ");
+    cantCoordenadas = keyword.nextInt();
+
+    Main coordenada = new Main();
+    coordenada.cargarXY(cantCoordenadas);
+    coordenada.resultadosCuadrantes(cantCoordenadas);
+  }
+}
