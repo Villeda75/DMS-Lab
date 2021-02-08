@@ -1,1 +1,0 @@
-Saca una captura del emulador funcionando o crea un pdf con los paso que hiciste hasta tener el emulador funcionando
