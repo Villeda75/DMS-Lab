@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "868159407154",
+    "project_id": "loginfirebasedsm-11622",
+    "storage_bucket": "loginfirebasedsm-11622.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868159407154:android:980f9cd308f075bc16282b",
+        "android_client_info": {
+          "package_name": "sv.edu.udb.guia06app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868159407154-1dmla023rchgkptag039hte9nfbc7mg7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCmZrk078MvuWxFoBS4b2VI7MIUSevG90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868159407154-1dmla023rchgkptag039hte9nfbc7mg7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868159407154:android:ed30a2375502431916282b",
+        "android_client_info": {
+          "package_name": "sv.edu.udb.loginfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868159407154-1dmla023rchgkptag039hte9nfbc7mg7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCmZrk078MvuWxFoBS4b2VI7MIUSevG90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868159407154-1dmla023rchgkptag039hte9nfbc7mg7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
